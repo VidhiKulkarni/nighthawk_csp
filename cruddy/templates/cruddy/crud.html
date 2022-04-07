@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<body style="font-family: Baskerville"></body>
 
 <!-- EXTEND (layout.html), this is a template for all rendered pages in the project -->
 {% extends "layout.html" %}
@@ -18,9 +19,9 @@
         </header>
         <header class="pb-3 mb-4 border-bottom border-primary text-dark">
             <span class="fs-4">Current User: {{ current_user.name }}</span>
-        </header>
-        <header class="pb-3 mb-4 border-bottom border-primary text-dark">
-            <span class="fs-4"><a href={{ url_for('crud.crud_logout') }}>Logout</a></span>
+        <button style="margin-left: 1000px; background-color:#C0DBBA; border-color:darkgreen; color:white">
+            <span style="" class="fs-4"><a href={{ url_for('crud.crud_logout') }}>Logout</a></span>
+        </button>
         </header>
     </div>
     <div class="container py-4 text-light bg-success">
